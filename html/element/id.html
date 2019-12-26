@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="show" style="width: 25rem;height: 12.5rem;background-color: red;"></div>
+		<a href="#" onclick="change();">改变颜色</a>
+		<script type="text/javascript">
+			var change = function() {
+				var div = document.getElementById("show");//️①
+				div.style.backgroundColor = div.style.backgroundColor == 'red' ? 'green' : (div.style.backgroundColor == 'green' ?
+					'blue' : 'red');
+			};
+		</script>
+	</body>
+</html>
