@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h4>same页面</h1>
+			<script type="text/javascript">
+				var xhr;
+				//创建XMLHttpRequest对象
+				if (window.XMLHttpRequest) {
+					xhr = new XMLHttpRequest();
+				} else {
+					alert("浏览器不支持XMLHttpRequest对象");
+				}
+				//设置处理响应的回调函数
+				xhr.onreadystatechange = function() {
+					if (xhr.readyState == 4) {
+						document.body.innerHTML += "测试" + "<br>";
+					};
+
+				}
+				//发送异步请求
+				xhr.open("GET", "file:///Users/ydh/Desktop/H5/H5BasedDemo/books.json", true);
+				//发送请求
+				xhr.send(null);
+			</script>
+	</body>
+</html>
