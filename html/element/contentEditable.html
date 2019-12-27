@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 直接指定contentEditable=“trye”表明该元素是可编辑的 -->
+		<div contenteditable="true" style="height:9.375rem; 25rem;border: 0.125rem solid black ;">
+			全栈工程师
+			<!-- 该元素的父元素有contentEditable=“true”，因此该表格也是可编辑的 -->
+			<table style="width: 17.5rem; border-collapse: collapse;" border="1">
+				<tr>
+					<td>java</td>
+					<td>h5</td>
+				</tr>
+				<tr>
+					<td>java基础</td>
+					<td>java企业级</td>
+				</tr>
+			</table>
+		</div>
+		<hr>
+
+		<!-- 这个表格默认是不可编辑的，双击之后该表格变为可编辑状态 -->
+
+		<table id="target" ondblclick="this.contentEditable=true" style="width: 16.25rem;border-collapse: collapse;" border="1">
+			<tr>
+				<td>h5基础</td>
+				<td>h5企业级</td>
+			</tr>
+			<tr>
+				<td>android基础</td>
+				<td>android企业级</td>
+			</tr>
+
+		</table>
+	</body>
+</html>
