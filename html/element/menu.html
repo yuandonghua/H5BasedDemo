@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div contextmenu="fileMenu" style="width: 400px; height: 400px;background-color: aliceblue;"></div>
+
+		<menu type="context" id="fileMenu">
+			<menu label="文件">
+				<menuitem type="command" onclick="file_new()" label="新建">
+				</menuitem>
+				<menuitem type="command" onclick="file_open()" label="打开">
+				</menuitem>
+				<menuitem type="command" onclick="file_save()" label="保存">
+				</menuitem>
+			</menu>
+			<menu label="编辑">
+				<menuitem type="command" onclick="edit_cut()" label="剪切">
+				</menuitem>
+				<menuitem type="command" onclick="edit_copy()" label="复制">
+				</menuitem>
+				<menuitem type="command" onclick="edit_paste()" label="粘贴">
+				</menuitem>
+			</menu>
+		</menu>
+	</body>
+</html>
